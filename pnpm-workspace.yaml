@@ -1,0 +1,6 @@
+# https://pnpm.io/workspaces
+packages:
+  # Make sure all required dependencies are installed for our tests
+  - 'test/**/*'
+  - '.'
+

@@ -1,0 +1,21 @@
+{
+  "name": "@test/blog",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --verbose",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.18.4",
+    "@astrojs/rss": "^2.3.2",
+    "@astrojs/sitemap": "^1.2.2",
+    "@grewety/astro-static-cms": "workspace:*",
+    "@staticcms/proxy-server": "^2.0.0",
+    "rollup": "^3.20.7"
+  }
+}

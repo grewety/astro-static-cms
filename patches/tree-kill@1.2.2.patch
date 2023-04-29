@@ -1,0 +1,17 @@
+diff --git a/index.js b/index.js
+index 8df6a0fb2f97280ce2c7f5c1df7191ba3af8cd2b..2b5735daa44f2ba548a58a5bc077d4bb10e34e36 100755
+--- a/index.js
++++ b/index.js
+@@ -1,10 +1,8 @@
+ 'use strict';
+ 
+-var childProcess = require('child_process');
+-var spawn = childProcess.spawn;
+-var exec = childProcess.exec;
++import { spawn, exec } from 'node:child_process';
+ 
+-module.exports = function (pid, signal, callback) {
++export default function killTree(pid, signal, callback) {
+     if (typeof signal === 'function' && callback === undefined) {
+         callback = signal;
+         signal = undefined;
